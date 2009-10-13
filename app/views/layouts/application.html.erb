@@ -6,15 +6,24 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title><%= controller.controller_name %>: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
+	<%= stylesheet_link_tag 'global' %>
+	<%= stylesheet_link_tag 'themes/default' %>
   <%= javascript_include_tag :defaults %>
 </head>
 <body>
- 
-<p style="color: green"><%= flash[:notice] %></p>
-
-<div> 
-<%= yield %>
-</div>
+	<p style="color: green"><%= flash[:notice] %></p>
+	<div id="page">
+		<%= render :partial => "layouts/header" %>
+		<%= render :partial => "layouts/menu" %>
+		<div id="center">
+			<%= render :partial => "layouts/content" %>
+			<%= render :partial => "layouts/column1" %>
+			<%= render :partial => "layouts/column2" %>
+		</div>
+		<div class="clearcontent">
+		</div>
+		<%= render :partial => "layouts/footer" %>
+	</div>
  
 </body>
 </html>

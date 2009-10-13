@@ -1,0 +1,63 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#page{
+	margin: 0px auto;
+	width:1000px;
+}
+
+#header{
+	border: 1px solid red;
+	position: relative;
+}
+
+#menu{
+	border: 1px solid yellow;
+	position: relative;
+}
+
+#center{
+	border: 1px solid green;
+	position: relative;
+	width:100%;
+}
+
+#content{
+	border: 1px solid gray;
+	float: left;
+	position: relative;
+	width: 66%;
+}
+
+#column1{
+	border: 1px solid black;
+	float: right;
+/*	margin-left:10px;*/
+	position: relative;
+	width: 33%;
+}
+
+#column2{
+	border: 1px solid #996200;
+	float: left;
+	margin-left:10px;
+	position: relative;
+	display: none;
+}
+
+#footer{
+	border:1px solid blue;
+	position: relative;
+}
+
+/* POST CSS*/
+.post_title{
+	color:gray;
+}
+
+.post_body{
+	background-color: #659990;
+}
+

@@ -21,7 +21,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :user_session
   map.resource :account, :controller => "users"
   map.resources :users
-  map.resources :posts, :has_many => :comments
+  map.resources :posts, :has_many => [ :comments, :categories, :tags ]
+  map.resources :categories
+  map.resources :tags
   map.root :controller => "posts"
   
   # Sample resource route with more complex sub-resources

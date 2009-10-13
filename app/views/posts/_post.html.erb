@@ -1,0 +1,14 @@
+<div id="post_<%=post.id%>">
+	<div class="post_title">
+		<%= post.title %>
+	</div>
+	<div class="post_body">
+		<%= post.body %>
+	</div>
+	<div class="post_footer">
+		
+		<% post.categories.each do | cat|%>
+			<%= cat.name %>
+		<% end %>
+	</div>
+</div>
